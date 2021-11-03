@@ -1,0 +1,309 @@
+progarme //khatab Ahmed Rashed
+/**
+ *
+ * @author Khatab
+ */
+public class Adress{
+    String street_no;
+     String City;
+     String Country;
+
+    public Adress(String street_no, String City, String Country) {
+        this.streetno = street_no;
+        this.City = City;
+        this.Country = Country;}
+
+    public void setStreet_no(String street_no) {
+        this.street_no = street_no;
+    }
+
+    public void setCity(String City) {
+        this.City = City;
+    }
+
+    public void setCountry(String Country) {
+        this.Country = Country;
+    }
+
+    public String getStreet_no() {
+        return street_no;
+    }
+
+    public String getCity() {
+        return City;
+    }
+
+    public String getCountry() {
+        return Country;
+    }
+     
+    
+}
+/**
+ *
+ * @author Khatab
+ */
+public class studentOne{
+    public String Name;
+    private int  ID;
+    public float GPA;
+    studentOne studen1;
+    address address;
+
+    public studentOne(String Name, int ID, float GPA) {
+        this.Name = Name;
+        this.ID = ID;
+        this.GPA = GPA;
+    }
+    
+    
+    
+}
+public class Subject
+{
+    int Subject_ID;
+    String Subject_Name;
+    int Subjecthours;
+
+    public Subject(int Subject_ID, String Subject_name, int Subjecthours) {
+        this.Subject_ID = Subject_ID;
+        this.Subject_Name = Subject_Name;
+        this.Subjecthours = Subjecthours;}
+
+}
+progame 2
+/**
+ *
+ * @author Khatab
+ */
+public class PERSON{
+     String Name;
+     String Adress;
+     int Phone_Number;
+     String Email_Adress;
+
+    public PERSON() {
+    }
+
+    public PERSON(String Name, String Adress, int Phone_Number, String Email_Adress) {
+        this.Name = Name;
+        this.Adress = Adress;
+        this.Phone_Number = Phone_Number;
+        this.Email_Adress = Email_Adress;}
+
+    public String toString(){
+        return Name +"PERSON";
+    }
+    public void setName(String Name) {
+        this.Name = Name;
+    }
+
+    public void setAdress(String Adress) {
+        this.Adress = Adress;
+    }
+
+    public void setPhone_Number(int Phone_Number) {
+        this.Phone_Number = Phone_Number;
+    }
+
+    public void setEmail_Adress(String Email_Adress) {
+        this.Email_Adress = Email_Adress;
+    }
+
+    public String getName() {
+        return Name;
+    }
+
+    public String getAdress() {
+        return Adress;
+    }
+
+    public int getPhone_Number() {
+        return Phone_Number;
+    }
+
+    public String getEmail_Adress() {
+        return Email_Adress;
+    }
+     
+
+public class Student extends PERSON {
+    final String st ="freshman";
+    final String st ="sophomor";
+    final String st ="Junior";
+   final String st ="Senior";
+
+    public Student() {
+    }
+
+    public Student(String Name, String Adress, int Phone_Number, String Email_Adress) {
+        super(Name, Adress, Phone_Number, Email_Adress);
+        
+    }
+    public String toString(){
+        return Name  +"Student";}
+   
+    
+    
+    
+}
+
+    
+}
+public class Employee extends person{
+    String office;
+    double salary;
+    int date_hired;
+
+    public Employee() {
+    }
+
+    
+
+    public Employee(String office, double salary, int date_hired, String name, String address, int phone_number, String email_address) {
+        super(name, address, phone_number, email_address);
+        this.office = office;
+        this.salary = salary;
+        this.date_hired = date_hired;
+    }
+    public String toString(){
+        return name +"employee" ;
+    }
+
+    public void setOffice(String office) {
+        this.office = office;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    public void setDate_hired(int date_hired) {
+        this.date_hired = date_hired;
+    }
+
+    public String getOffice() {
+        return office;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public int getDate_hired() {
+        return date_hired;
+    }
+    
+    
+}
+
+public class faculty extends Employee{
+    double office_houer;
+    String rank;
+
+    public faculty() {
+    }
+
+   
+
+    public faculty(double office_houer, String rank, String office, double salary, int date_hired, String name, String address, int phone_number, String email_address) {
+        super(office, salary, date_hired, name, address, phone_number, email_address);
+        this.office_houer = office_houer;
+        this.rank = rank;
+    }
+
+    public void setOffice_houer(double office_houer) {
+        this.office_houer = office_houer;
+    }
+
+    public void setRank(String rank) {
+        this.rank = rank;
+    }
+
+    public double getOffice_houer() {
+        return office_houer;
+    }
+
+    public String getRank() {
+        return rank;
+    }
+    
+    
+}
+public class faculty extends Employee{
+    double office_houer;
+    String rank;
+
+    public faculty() {
+    }
+
+   
+
+    public faculty(double office_houer, String rank, String office, double salary, int date_hired, String name, String address, int phone_number, String email_address) {
+        super(office, salary, date_hired, name, address, phone_number, email_address);
+        this.office_houer = office_houer;
+        this.rank = rank;
+    }
+
+    public void setOffice_houer(double office_houer) {
+        this.office_houer = office_houer;
+    }
+
+    public void setRank(String rank) {
+        this.rank = rank;
+    }
+
+    public double getOffice_houer() {
+        return office_houer;
+    }
+
+    public String getRank() {
+        return rank;
+    }
+    public String tostring(){
+        return name+"staff";
+    }
+    
+}
+public class mydate {
+   private int year;
+   private  int month;
+    private int day;
+
+    public mydate() {
+    }
+
+    public mydate(int year, int month, int day) {
+        this.year = year;
+        this.month = month;
+        this.day = day;
+    }
+    
+
+    public int getYear() {
+        return year;
+    }
+
+    public int getMonth() {
+        return month;
+    }
+
+    public int getDay() {
+        return day;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public void setMonth(int month) {
+        this.month = month;
+    }
+
+    public void setDay(int day) {
+        this.day = day;
+    }
+    
+    
+}
+
